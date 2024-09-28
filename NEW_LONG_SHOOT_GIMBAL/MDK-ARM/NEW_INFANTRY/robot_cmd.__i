@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../USB_DEVICE/App -I ../USB_DEVICE/Target -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Middlewares/ST/ARM/DSP/Inc -I ../ACE-ECF/Algorithm/inc -I ../ACE-ECF/Application/inc -I ../ACE-ECF/Application/inc/IMU_Driver -I ../ACE-ECF/Bsp/Inc -I ../ACE-ECF/Control/Inc -I ../TASK/inc -I ../VERSION
+-I.\RTE\_NEW_INFANTRY
+-IC:\Users\Z\Desktop\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+-IC:\Users\Z\Desktop\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__FPU_USED="1U" -D__FPU_PRESENT="1U" -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING
+-o new_infantry\robot_cmd.o --omf_browse new_infantry\robot_cmd.crf --depend new_infantry\robot_cmd.d "..\ACE-ECF\Control\Src\robot_cmd.c"

@@ -1,0 +1,130 @@
+T2DB0 045:576.188   SEGGER J-Link V7.94c Log File
+T2DB0 045:576.382   DLL Compiled: Jan  3 2024 15:15:42
+T2DB0 045:576.403   Logging started @ 2024-09-28 10:27
+T2DB0 045:576.418   Process: C:\Keil_v5\UV4\UV4.exe
+T2DB0 045:576.435 - 17.072ms
+T2DB0 045:576.458 JLINK_SetWarnOutHandler(...)
+T2DB0 045:576.474 - 0.016ms
+T2DB0 045:576.495 JLINK_OpenEx(...)
+T2DB0 045:581.226   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T2DB0 045:582.262   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T2DB0 045:582.530   Decompressing FW timestamp took 223 us
+T2DB0 045:589.916   Hardware: V9.40
+T2DB0 045:589.968   S/N: 69401900
+T2DB0 045:590.008   OEM: SEGGER
+T2DB0 045:590.043   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T2DB0 045:591.125   Bootloader: (Could not read)
+T2DB0 045:592.406   TELNET listener socket opened on port 19021
+T2DB0 045:602.832   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T2DB0 045:604.249   WEBSRV Webserver running on local port 19080
+T2DB0 045:604.677   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T2DB0 045:604.852   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\SEGGER\JLink_V722b\JLinkGUIServer.exe
+T2DB0 045:604.954   Forking J-Link GUI Server: C:\Program Files (x86)\SEGGER\JLink_V722b\JLinkGUIServer.exe
+T2DB0 045:618.055   J-Link GUI Server info: "J-Link GUI server V7.22b "
+T2DB0 045:618.593   J-Link GUI Server: Connection breakdown.
+T2DB0 045:618.832 - 42.335ms returns "O.K."
+T2DB0 045:618.881 JLINK_GetEmuCaps()
+T2DB0 045:618.899 - 0.016ms returns 0xB9FF7BBF
+T2DB0 045:619.223 JLINK_TIF_GetAvailable(...)
+T2DB0 045:619.470 - 0.247ms
+T2DB0 045:619.538 JLINK_SetErrorOutHandler(...)
+T2DB0 045:619.552 - 0.014ms
+T2DB0 045:619.587 JLINK_ExecCommand("ProjectFile = "C:\Users\Z\Desktop\RM\HERO_2024\2024HERO\NEW_LONG_SHOOT_GIMBAL\MDK-ARM\JLinkSettings.ini"", ...). 
+T2DB0 045:624.428 - 4.839ms returns 0x00
+T2DB0 045:624.920 JLINK_ExecCommand("Device = STM32F407IGHx", ...). 
+T2DB0 045:626.100   Device "STM32F407IG" selected.
+T2DB0 045:627.182 - 2.223ms returns 0x00
+T2DB0 045:627.223 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T2DB0 045:627.253 - 0.004ms returns 0x01
+T2DB0 045:627.283 JLINK_GetHardwareVersion()
+T2DB0 045:627.307 - 0.023ms returns 94000
+T2DB0 045:627.335 JLINK_GetDLLVersion()
+T2DB0 045:627.354 - 0.018ms returns 79403
+T2DB0 045:627.381 JLINK_GetOEMString(...)
+T2DB0 045:627.411 JLINK_GetFirmwareString(...)
+T2DB0 045:627.432 - 0.020ms
+T2DB0 045:627.464 JLINK_GetDLLVersion()
+T2DB0 045:627.488 - 0.023ms returns 79403
+T2DB0 045:627.514 JLINK_GetCompileDateTime()
+T2DB0 045:627.534 - 0.020ms
+T2DB0 045:627.565 JLINK_GetFirmwareString(...)
+T2DB0 045:627.585 - 0.020ms
+T2DB0 045:627.612 JLINK_GetHardwareVersion()
+T2DB0 045:627.632 - 0.019ms returns 94000
+T2DB0 045:627.660 JLINK_GetSN()
+T2DB0 045:627.684 - 0.023ms returns 69401900
+T2DB0 045:627.713 JLINK_GetOEMString(...)
+T2DB0 045:627.749 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T2DB0 045:628.651 - 0.901ms returns 0x00
+T2DB0 045:628.712 JLINK_HasError()
+T2DB0 045:628.740 JLINK_SetSpeed(10000)
+T2DB0 045:628.918 - 0.176ms
+T2DB0 045:629.732 JLINK_HasError()
+T2DB0 045:629.773 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T2DB0 045:629.796 - 0.023ms returns JLINKARM_RESET_TYPE_NORMAL
+T2DB0 045:629.819 JLINK_Reset()
+T2DB0 045:630.065   InitTarget() start
+T2DB0 045:630.106    J-Link Script File: Executing InitTarget()
+T2DB0 045:630.351   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 045:715.560   Error: Failed to initialized DAP.
+T2DB0 045:715.657   Can not attach to CPU. Trying connect under reset.
+T2DB0 045:766.545   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 045:852.594   Error: Failed to initialized DAP.
+T2DB0 045:852.636   Connecting to CPU via connect under reset failed.
+T2DB0 045:904.123   InitTarget() end - Took 274ms
+T2DB0 045:965.574   InitTarget() start
+T2DB0 045:965.623    J-Link Script File: Executing InitTarget()
+T2DB0 045:966.236   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:052.347   Error: Failed to initialized DAP.
+T2DB0 046:052.480   Can not attach to CPU. Trying connect under reset.
+T2DB0 046:103.657   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:189.269   Error: Failed to initialized DAP.
+T2DB0 046:189.355   Connecting to CPU via connect under reset failed.
+T2DB0 046:240.201   InitTarget() end - Took 274ms
+T2DB0 046:240.258 - 610.438ms
+T2DB0 046:240.297 JLINK_GetId()
+T2DB0 046:240.651   InitTarget() start
+T2DB0 046:240.717    J-Link Script File: Executing InitTarget()
+T2DB0 046:241.030   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:326.644   Error: Failed to initialized DAP.
+T2DB0 046:326.694   Can not attach to CPU. Trying connect under reset.
+T2DB0 046:377.886   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:464.753   Error: Failed to initialized DAP.
+T2DB0 046:464.821   Connecting to CPU via connect under reset failed.
+T2DB0 046:515.875   InitTarget() end - Took 275ms
+T2DB0 046:577.224   InitTarget() start
+T2DB0 046:577.270    J-Link Script File: Executing InitTarget()
+T2DB0 046:577.539   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:663.027   Error: Failed to initialized DAP.
+T2DB0 046:663.073   Can not attach to CPU. Trying connect under reset.
+T2DB0 046:714.307   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:801.123   Error: Failed to initialized DAP.
+T2DB0 046:801.203   Connecting to CPU via connect under reset failed.
+T2DB0 046:852.870   InitTarget() end - Took 275ms
+T2DB0 046:852.971 - 612.672ms returns 0x00000000
+T2DB0 046:853.029 JLINK_GetId()
+T2DB0 046:853.539   InitTarget() start
+T2DB0 046:853.602    J-Link Script File: Executing InitTarget()
+T2DB0 046:853.911   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 046:941.921   Error: Failed to initialized DAP.
+T2DB0 046:941.987   Can not attach to CPU. Trying connect under reset.
+T2DB0 046:993.124   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 047:079.753   Error: Failed to initialized DAP.
+T2DB0 047:079.818   Connecting to CPU via connect under reset failed.
+T2DB0 047:130.270   InitTarget() end - Took 276ms
+T2DB0 047:191.583   InitTarget() start
+T2DB0 047:191.657    J-Link Script File: Executing InitTarget()
+T2DB0 047:192.077   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 047:277.961   Error: Failed to initialized DAP.
+T2DB0 047:278.023   Can not attach to CPU. Trying connect under reset.
+T2DB0 047:328.543   SWD selected. Executing JTAG -> SWD switching sequence.
+T2DB0 047:415.604   Error: Failed to initialized DAP.
+T2DB0 047:415.659   Connecting to CPU via connect under reset failed.
+T2DB0 047:466.927   InitTarget() end - Took 275ms
+T2DB0 047:466.997 - 613.965ms returns 0x00000000
+T2DB0 047:471.817 JLINK_GetFirmwareString(...)
+T2DB0 047:471.845 - 0.028ms
+T2DB0 087:432.057 JLINK_Close()
+T2DB0 087:445.791 - 13.731ms
+T2DB0 087:445.851   
+T2DB0 087:445.868   Closed

@@ -1,0 +1,146 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Z,  , LIC=FYKYW-QS630-305NC-7TW9U-CTL5N-873A9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Z\Desktop\RM\HERO\CHASSIS_8M_TC_V1.6.0-old\CHASSIS_8M_YUAN _WU_USB_TC.V1.4.1\MDK-ARM\INFANTRY_GIMBAL.uvprojx
+Project File Date:  06/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'INFANTRY_GIMBAL'
+compiling fire_task.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../Task/Inc/Chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\fire_task.c(39): warning:  #177-D: variable "Fist_set"  was declared but never referenced
+      static uint8_t Fist_set = 1;//首次设置目标值
+..\Task\Src\fire_task.c(40): warning:  #177-D: variable "Block"  was declared but never referenced
+      static uint8_t Block = 0;//堵转标志
+..\Task\Src\fire_task.c(41): warning:  #177-D: variable "On_Fire_Block_time"  was declared but never referenced
+      static uint16_t On_Fire_Block_time = 0;//进弹堵转时长
+..\Task\Src\fire_task.c(42): warning:  #177-D: variable "Re_turn"  was declared but never referenced
+      static uint16_t Re_turn = 0;
+..\Task\Src\fire_task.c(32): warning:  #177-D: variable "ON_OR_OFF"  was declared but never referenced
+  static Fire_State_e ON_OR_OFF = NO_Fire_FORCE;//摩擦轮开关状态
+..\Task\Src\fire_task.c: 8 warnings, 0 errors
+compiling Init_task.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../Task/Inc/chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\Init_task.c: 5 warnings, 0 errors
+compiling referee_task.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../Task/Inc/Chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\referee_task.c(613): warning:  #1-D: last line of file ends without a newline
+  */
+..\Task\Src\referee_task.c(40): warning:  #177-D: function "Drow_Motor_Angle_BackGoroud"  was declared but never referenced
+  static void Drow_Motor_Angle_BackGoroud(void);
+..\Task\Src\referee_task.c(43): warning:  #177-D: function "Drow_Motor_Angle"  was declared but never referenced
+  static void Drow_Motor_Angle(void);
+..\Task\Src\referee_task.c(432): warning:  #177-D: function "UI_Init"  was declared but never referenced
+  static void UI_Init(void)
+..\Task\Src\referee_task.c(523): warning:  #177-D: function "print_chassis_mode"  was declared but never referenced
+  static void print_chassis_mode(void)
+..\Task\Src\referee_task.c(544): warning:  #177-D: function "print_fric_state"  was declared but never referenced
+  static void print_fric_state(void)
+..\Task\Src\referee_task.c(497): warning:  #177-D: function "print_cap_power_control"  was declared but never referenced
+  static void print_cap_power_control(void)
+..\Task\Src\referee_task.c(553): warning:  #177-D: function "print_now_aimmode"  was declared but never referenced
+  static void print_now_aimmode(void)
+..\Task\Src\referee_task.c(598): warning:  #177-D: function "print_chassis_gimbal_angle"  was declared but never referenced
+  static void print_chassis_gimbal_angle(void)
+..\Task\Src\referee_task.c(508): warning:  #177-D: function "print_control_mode"  was declared but never referenced
+  static void print_control_mode(void)
+..\Task\Src\referee_task.c(588): warning:  #177-D: function "print_pitch_and_fire_info"  was declared but never referenced
+  static void print_pitch_and_fire_info(void)
+..\Task\Src\referee_task.c(606): warning:  #177-D: function "print_fire_encoder"  was declared but never referenced
+  void print_fire_encoder(void)
+..\Task\Src\referee_task.c: 15 warnings, 0 errors
+compiling chassis_task.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../Task/Inc/Chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\chassis_task.c(214): warning:  #223-D: function "abs" declared implicitly
+              if (abs(Chassis.LF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.LB_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RB_MOTOR->Motor_Information.speed < 10))
+..\Task\Src\chassis_task.c(403): warning:  #177-D: variable "judgDataError_Time"  was declared but never referenced
+  	static int32_t judgDataError_Time = 0;
+..\Task\Src\chassis_task.c(570): warning:  #1-D: last line of file ends without a newline
+  }
+..\Task\Src\chassis_task.c(16): warning:  #177-D: variable "currentTime"  was declared but never referenced
+  static uint32_t currentTime;
+..\Task\Src\chassis_task.c(376): warning:  #177-D: function "Max_Speed_Limit"  was declared but never referenced
+  void Max_Speed_Limit(void)
+..\Task\Src\chassis_task.c(359): warning:  #177-D: function "chassis_prevent_motion_distortion"  was declared but never referenced
+  void chassis_prevent_motion_distortion(void)
+..\Task\Src\chassis_task.c: 11 warnings, 0 errors
+linking...
+Program Size: Code=46256 RO-data=5100 RW-data=612 ZI-data=44964  
+FromELF: creating hex file...
+"INFANTRY_GIMBAL\INFANTRY_GIMBAL.axf" - 0 Error(s), 39 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_INFANTRY_GIMBAL
+  C:\Users\Z\Desktop\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Z\Desktop\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>

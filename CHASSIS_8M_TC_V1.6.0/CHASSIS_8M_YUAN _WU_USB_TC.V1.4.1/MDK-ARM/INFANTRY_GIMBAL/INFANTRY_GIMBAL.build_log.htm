@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Z,  , LIC=FYKYW-QS630-305NC-7TW9U-CTL5N-873A9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Z\Desktop\RM\HERO_2024\2024HERO\CHASSIS_8M_TC_V1.6.0\CHASSIS_8M_YUAN _WU_USB_TC.V1.4.1\MDK-ARM\INFANTRY_GIMBAL.uvprojx
+Project File Date:  06/23/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'INFANTRY_GIMBAL'
+compiling robot_cmd.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ACE-ECF\Control\Src\robot_cmd.c(182): warning:  #177-D: variable "send_time"  was declared but never referenced
+      static uint8_t send_time = 1;
+..\ACE-ECF\Control\Src\robot_cmd.c(625): warning:  #1-D: last line of file ends without a newline
+  }
+..\ACE-ECF\Control\Src\robot_cmd.c(26): warning:  #550-D: variable "ins"  was set but never used
+  static const INS_t       *ins;
+..\ACE-ECF\Control\Src\robot_cmd.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=46884 RO-data=5100 RW-data=708 ZI-data=44964  
+FromELF: creating hex file...
+"INFANTRY_GIMBAL\INFANTRY_GIMBAL.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_INFANTRY_GIMBAL
+  C:\Users\Z\Desktop\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\Z\Desktop\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
