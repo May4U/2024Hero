@@ -91,7 +91,7 @@ void GIMBAL_TASK(void const * argument)
 //            Gimbal_Not_Work();  //云台紧急状态
         
         //DJMotor_Send_only_one(Gimbal.PITCH_Motor);
-        DJMotor_Send_only_one(Gimbal.YAW_Motor);
+        //DJMotor_Send_only_one(Gimbal.YAW_Motor);
 
 		taskEXIT_CRITICAL();              // 退出临界区
         vTaskDelay(1); // 绝对延时//vTaskDelay(2);
