@@ -28,18 +28,28 @@ static void fire_behaviour_choose(void);
 static void Shoot_Check(void);
 int16_t left_speed = 0;
 int16_t right_speed = 0;
+int16_t left_speed_up = 0;
+int16_t right_speed_up = 0;
 void FIRE_TASK(void const *argument)
 {
 	fire_task_init();
 	while (1)
 	{
-        Gimbal_Fire_State_Set();
-		fire_behaviour_choose();
-		fire_pid_calculate();
         left_speed = Fire.left_motor->Motor_Information.speed;
         right_speed = -Fire.right_motor->Motor_Information.speed;
+        left_speed_up = Fire.left_motor_up->Motor_Information.speed;
+        right_speed_up = -Fire.right_motor_up->Motor_Information.speed;
+
+        Deal_Fire_Set_Rpm();//改变摩擦轮转速
+        Send_Fire_Set_Rpm();//发送底盘摩擦轮设定转速
+        Send_Fire_Motor_Speed(left_speed_up, right_speed_up, left_speed, right_speed);//发送底盘摩擦轮实际转速
+
+        Gimbal_Fire_State_Set();
+				fire_behaviour_choose();
+				fire_pid_calculate();
+
         Shoot_Check();
-		DJIMotor_Send(Fire.left_motor);
+		//DJIMotor_Send(Fire.left_motor);
 		vTaskDelay(1);
 	}
 }
@@ -50,9 +60,13 @@ void fire_task_init(void)
 	// 获得拨弹指针
     Fire.left_motor  = DJIMotor_Init(1,1,true,M3508,30);
     Fire.right_motor = DJIMotor_Init(1,2,false,M3508,30);
+    Fire.left_motor_up  = DJIMotor_Init(1,3,true,M3508,30);
+    Fire.right_motor_up = DJIMotor_Init(1,4,false,M3508,30);
 
     Fire.left_motor->Using_PID = Speed_PID;
     Fire.right_motor->Using_PID = Speed_PID;
+    Fire.left_motor_up->Using_PID = Speed_PID;
+    Fire.right_motor_up->Using_PID = Speed_PID;
     
     PidInit(&Fire.left_motor->Speed_PID,3,0,0,Output_Limit);
  	PidInitMode(&Fire.left_motor->Speed_PID,Output_Limit,16000,0);//输出限幅模式设置
@@ -60,6 +74,13 @@ void fire_task_init(void)
     PidInit(&Fire.right_motor->Speed_PID,3,0,0,Output_Limit);
  	PidInitMode(&Fire.right_motor->Speed_PID,Output_Limit,16000,0);//输出限幅模式设置
     PidInitMode(&Fire.right_motor->Speed_PID,StepIn,2,0);//逐渐减速，实测发现最大速度减速会导致发射机构超电流断电
+    PidInit(&Fire.left_motor_up->Speed_PID,3,0,0,Output_Limit);
+ 	PidInitMode(&Fire.left_motor_up->Speed_PID,Output_Limit,16000,0);//输出限幅模式设置
+    PidInitMode(&Fire.left_motor_up->Speed_PID,StepIn,2,0);//过大的加减速会导致发射机构超电流断电
+    PidInit(&Fire.right_motor_up->Speed_PID,3,0,0,Output_Limit);
+ 	PidInitMode(&Fire.right_motor_up->Speed_PID,Output_Limit,16000,0);//输出限幅模式设置
+    PidInitMode(&Fire.right_motor_up->Speed_PID,StepIn,2,0);//逐渐减速，实测发现最大速度减速会导致发射机构超电流断电
+
 	Fire.Gimbal_CMD = Get_Gimbal_CMD_point();
 }
 //4900
@@ -81,6 +102,8 @@ void fire_behaviour_choose(void)
         //    low_speed-=10;
             DJIMotor_Set_val(Fire.left_motor, low_speed);
             DJIMotor_Set_val(Fire.right_motor, low_speed);
+            DJIMotor_Set_val(Fire.left_motor_up, low_speed);
+            DJIMotor_Set_val(Fire.right_motor_up, low_speed);
         //}
 
         return;
@@ -122,6 +145,12 @@ void fire_pid_calculate(void)
     Fire.right_motor->current_input = motor_speed_control(&Fire.right_motor->Speed_PID,
                                                           Fire.right_motor->set_speed,
                                                           Fire.right_motor->Motor_Information.speed);
+    Fire.left_motor_up->current_input = motor_speed_control(&Fire.left_motor_up->Speed_PID,
+                                                          Fire.left_motor_up->set_speed,
+                                                          Fire.left_motor_up->Motor_Information.speed);
+    Fire.right_motor_up->current_input = motor_speed_control(&Fire.right_motor_up->Speed_PID,
+                                                          Fire.right_motor_up->set_speed,
+                                                          Fire.right_motor_up->Motor_Information.speed);                        
 }
 uint16_t fla_speed = 100;
 void Shoot_Check(void)

@@ -1,6 +1,6 @@
 hero\bsp_pwm.o: ..\ACE-ECF\Application\src\IMU_Driver\bsp_PWM.c
 hero\bsp_pwm.o: ../ACE-ECF/Application/inc/IMU_Driver/bsp_PWM.h
-hero\bsp_pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\bsp_pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\bsp_pwm.o: ../Core/Inc/tim.h
 hero\bsp_pwm.o: ../Core/Inc/main.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
@@ -17,7 +17,7 @@ hero\bsp_pwm.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 hero\bsp_pwm.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-hero\bsp_pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\bsp_pwm.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 hero\bsp_pwm.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h

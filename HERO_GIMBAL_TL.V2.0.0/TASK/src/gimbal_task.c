@@ -90,7 +90,7 @@ void GIMBAL_TASK(void const * argument)
 //        else
 //            Gimbal_Not_Work();  //云台紧急状态
         
-        DJMotor_Send_only_one(Gimbal.PITCH_Motor);
+        //DJMotor_Send_only_one(Gimbal.PITCH_Motor);
         DJMotor_Send_only_one(Gimbal.YAW_Motor);
 
 		taskEXIT_CRITICAL();              // 退出临界区

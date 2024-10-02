@@ -1,8 +1,8 @@
 hero\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-hero\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\timers.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 hero\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\timers.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\timers.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\timers.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\timers.o: ../Core/Inc/FreeRTOSConfig.h
 hero\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

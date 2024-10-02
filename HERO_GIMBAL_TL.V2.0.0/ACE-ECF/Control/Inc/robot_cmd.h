@@ -123,6 +123,7 @@ typedef struct{
     
     Control_State_e     Control_State;
     uint8_t shooter_id1_42mm_speed_limit;
+    int16_t Fire_Set_Rpm;
     uint8_t Fire_Ready;
     uint8_t Pitch_Limit_Max_Flag;
 }Gimbal_CMD_t;
@@ -153,6 +154,8 @@ Gimbal_Work_State_e get_open_auto_delay_control(void);
 
 Gimbal_Work_State_e* get_gimbal_behaviour_point();
 
+void Send_Fire_Set_Rpm(void);
+void Send_Fire_Motor_Speed(uint16_t LF, uint16_t RF, uint16_t LB, uint16_t RB);
 void  Send_TC_to_Chassis(void);
 void Deal_Dr16_form_chassis(CAN_RxHeaderTypeDef *CAN_Rxmessage, uint8_t *Rx_Data);
 #endif

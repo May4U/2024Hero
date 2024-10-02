@@ -6,6 +6,8 @@
 typedef struct{
     DJIMotor_object_t*   left_motor;
     DJIMotor_object_t*   right_motor;
+    DJIMotor_object_t*   left_motor_up;
+    DJIMotor_object_t*   right_motor_up;
     const Gimbal_CMD_t*  Gimbal_CMD;
 }Fire_t;
 void FIRE_TASK(void const *argument);

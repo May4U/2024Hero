@@ -1,9 +1,9 @@
 hero\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-hero\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+hero\cmsis_os.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 hero\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 hero\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\cmsis_os.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\cmsis_os.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\cmsis_os.o: ../Core/Inc/FreeRTOSConfig.h
 hero\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

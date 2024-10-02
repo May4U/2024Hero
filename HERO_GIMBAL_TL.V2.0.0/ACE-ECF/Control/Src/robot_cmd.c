@@ -337,6 +337,51 @@ void  Send_Fire_Auto_Delay_And_Pitch_compensate_to_Chassis(void)
 	HAL_CAN_AddTxMessage(&hcan2, &CAN2_Txmessage, CAN2_Tx_Data, &send_mail_box);			//将一段数据通过 CAN 总线发送
 }
 
+/**
+  *@brief 转发摩擦轮转速
+  *@note  通讯总bit 48+8N+(29+8N)/4 = 135.25bit 10hz
+  */
+void Send_Fire_Motor_Speed(uint16_t LF, uint16_t RF, uint16_t LB, uint16_t RB)
+{
+    CONTROL_SEND_HZ(100);
+
+    CAN_TxHeaderTypeDef CAN2_Txmessage;
+    uint8_t CAN2_Tx_Data[8];
+    uint32_t send_mail_box;
+    
+    CAN2_Txmessage.StdId 	= 0x406;
+	CAN2_Txmessage.IDE		= CAN_ID_STD;
+	CAN2_Txmessage.RTR	  = CAN_RTR_DATA;
+	CAN2_Txmessage.DLC 		= 0x08;
+
+	CAN2_Tx_Data[0] = (LF) >> 8;
+	CAN2_Tx_Data[1] = (LF);
+    CAN2_Tx_Data[2] = (RF) >> 8;
+	CAN2_Tx_Data[3] = (RF);
+    CAN2_Tx_Data[4] = (LB) >> 8;
+	CAN2_Tx_Data[5] = (LB);
+    CAN2_Tx_Data[6] = (RB) >> 8;
+	CAN2_Tx_Data[7] = (RB);
+	HAL_CAN_AddTxMessage(&hcan2, &CAN2_Txmessage, CAN2_Tx_Data, &send_mail_box);
+}
+void Send_Fire_Set_Rpm(void)
+{
+    CONTROL_SEND_HZ(100);
+
+    CAN_TxHeaderTypeDef CAN2_Txmessage;
+    uint8_t CAN2_Tx_Data[2];
+    uint32_t send_mail_box;
+    
+    CAN2_Txmessage.StdId 	= 0x407;
+	CAN2_Txmessage.IDE		= CAN_ID_STD;
+	CAN2_Txmessage.RTR	  = CAN_RTR_DATA;
+	CAN2_Txmessage.DLC 		= 0x02;
+
+	CAN2_Tx_Data[0] = Gimbal_CMD.Fire_Set_Rpm >> 8;
+	CAN2_Tx_Data[1] = Gimbal_CMD.Fire_Set_Rpm;
+	HAL_CAN_AddTxMessage(&hcan2, &CAN2_Txmessage, CAN2_Tx_Data, &send_mail_box);
+}
+
 #endif
 
 #if USB_USE_PURPOSE == NAVIGATION
@@ -488,6 +533,7 @@ void CMD_Init(void)
     Gimbal_CMD.Control_State = Chassis_RC;
     Gimbal_CMD.Fire_Ready = 0;
     Gimbal_CMD.Pitch_Limit_Max_Flag = 0;
+    Gimbal_CMD.Fire_Set_Rpm = 4000;
     ins = get_imu_control_point();
 
 }
@@ -637,6 +683,31 @@ void Gimbal_Work_State_Set(void)
         Gimbal_CMD.Gimbal_Work_State = RC_Gimbal_Work_State;//回归原先模式
 }
 fp32 now_time_ms;
+
+/**
+ * @brief 改变摩擦轮转速
+ * 
+ */
+void Deal_Fire_Set_Rpm(void)
+{
+    static uint8_t X_set = 1;
+    if (Gimbal_CMD.rc_ctl->kb.bit.N)
+    {
+        if (X_set)
+        {
+            X_set = 0;
+            Gimbal_CMD.Fire_Set_Rpm+=100;
+        }
+    }
+    else
+        X_set = 1;
+        
+//    Gimbal_CMD.Fire_Set_Rpm = 0;
+    if (Gimbal_CMD.Fire_Set_Rpm > 5100) Gimbal_CMD.Fire_Set_Rpm = 4500;
+
+}
+
+
 void Gimbal_CMD_Set(fp32 Pitch_Up_Angle_Limit, fp32 Pitch_Down_Angle_Limit)
 {
     #if USB_USE_PURPOSE == NAVIGATION

@@ -1,8 +1,8 @@
 hero\user_lib.o: ..\ACE-ECF\Application\src\IMU_Driver\user_lib.c
-hero\user_lib.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-hero\user_lib.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+hero\user_lib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\user_lib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
 hero\user_lib.o: ../ACE-ECF/Algorithm/inc/user_lib.h
-hero\user_lib.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\user_lib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\user_lib.o: ../Core/Inc/main.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\user_lib.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -18,7 +18,7 @@ hero\user_lib.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 hero\user_lib.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-hero\user_lib.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\user_lib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 hero\user_lib.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -53,4 +53,4 @@ hero\user_lib.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 hero\user_lib.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 hero\user_lib.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 hero\user_lib.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-hero\user_lib.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+hero\user_lib.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
