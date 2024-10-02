@@ -135,6 +135,7 @@ void Gimbal_Choice_Lock_type(void);
 void Gimbal_CMD_Set(fp32 Pitch_Up_Angle_Limit, fp32 Pitch_Down_Angle_Limit);
 void Gimbal_Angle_Set(fp32 Pitch_Angle_Change, fp32 Yaw_Angle_Change);
 void Gimbal_Fire_State_Set(void);
+void Deal_Fire_Set_Rpm(void);
 
 void Gimbal_Pitch_Set_Encoder(int64_t Set_Encoder);
 void Gimbal_Pitch_Set_IMU(fp32 Set_IMU);
