@@ -1,9 +1,9 @@
 infantry_gimbal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-infantry_gimbal\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-infantry_gimbal\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+infantry_gimbal\tasks.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+infantry_gimbal\tasks.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 infantry_gimbal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-infantry_gimbal\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-infantry_gimbal\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\tasks.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\tasks.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\tasks.o: ../Core/Inc/FreeRTOSConfig.h
 infantry_gimbal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 infantry_gimbal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

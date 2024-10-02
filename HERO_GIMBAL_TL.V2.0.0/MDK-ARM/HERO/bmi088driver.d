@@ -1,6 +1,6 @@
 hero\bmi088driver.o: ..\ACE-ECF\Application\src\IMU_Driver\BMI088driver.c
 hero\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088driver.h
-hero\bmi088driver.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\bmi088driver.o: ../Core/Inc/main.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\bmi088driver.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -16,7 +16,7 @@ hero\bmi088driver.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 hero\bmi088driver.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-hero\bmi088driver.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -40,4 +40,4 @@ hero\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 hero\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088reg.h
 hero\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088Middleware.h
 hero\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/bsp_dwt.h
-hero\bmi088driver.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
+hero\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

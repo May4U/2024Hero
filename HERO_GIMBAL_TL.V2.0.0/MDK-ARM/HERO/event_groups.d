@@ -1,8 +1,8 @@
 hero\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-hero\event_groups.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\event_groups.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 hero\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\event_groups.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\event_groups.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\event_groups.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\event_groups.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
 hero\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

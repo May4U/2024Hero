@@ -1,7 +1,7 @@
 infantry_gimbal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 infantry_gimbal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-infantry_gimbal\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-infantry_gimbal\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\croutine.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\croutine.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\croutine.o: ../Core/Inc/FreeRTOSConfig.h
 infantry_gimbal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 infantry_gimbal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

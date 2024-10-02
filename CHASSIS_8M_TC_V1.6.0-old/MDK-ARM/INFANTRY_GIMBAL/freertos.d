@@ -1,7 +1,7 @@
 infantry_gimbal\freertos.o: ../Core/Src/freertos.c
 infantry_gimbal\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-infantry_gimbal\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-infantry_gimbal\freertos.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\freertos.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\freertos.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\freertos.o: ../Core/Inc/FreeRTOSConfig.h
 infantry_gimbal\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 infantry_gimbal\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

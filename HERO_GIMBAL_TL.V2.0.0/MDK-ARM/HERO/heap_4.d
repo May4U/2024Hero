@@ -1,8 +1,8 @@
 hero\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-hero\heap_4.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\heap_4.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 hero\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\heap_4.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\heap_4.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\heap_4.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\heap_4.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\heap_4.o: ../Core/Inc/FreeRTOSConfig.h
 hero\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\heap_4.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

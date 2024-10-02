@@ -3,30 +3,89 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: μVision V5.35.0.0
-Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Z,  , LIC=FYKYW-QS630-305NC-7TW9U-CTL5N-873A9
+IDE-Version: μVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lann l, Apple, LIC=VGXG8-3MJUD-UHD8H-WDFZD-4XURN-GGUA5
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
-Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  C:\Program Files\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 7 (build 960)
 Assembler:       Armasm.exe V5.06 update 7 (build 960)
 Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
 Library Manager: ArmAr.exe V5.06 update 7 (build 960)
 Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
-CPU DLL:         SARMCM3.DLL V5.35.0.2
-Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      Segger\JL2CM3.dll V2.99.40.0
-Dialog DLL:      TCM.DLL V1.53.0.0
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.44.0
+Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-C:\Users\Z\Desktop\RM\HERO\CHASSIS_8M_TC_V1.6.0-old\CHASSIS_8M_YUAN _WU_USB_TC.V1.4.1\MDK-ARM\INFANTRY_GIMBAL.uvprojx
-Project File Date:  06/23/2024
+D:\Documents\Github\2024Hero_real\CHASSIS_8M_TC_V1.6.0-old\MDK-ARM\INFANTRY_GIMBAL.uvprojx
+Project File Date:  10/02/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Program Files\Keil_v5\ARM\ARMCC\Bin'
 Build target 'INFANTRY_GIMBAL'
+compiling gpio.c...
+compiling tim.c...
+compiling spi.c...
+compiling can.c...
+compiling dma.c...
+compiling freertos.c...
+compiling main.c...
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_msp.c...
+compiling usart.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling croutine.c...
+compiling list.c...
+compiling event_groups.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling tasks.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling timers.c...
+assembling startup_stm32f407xx.s...
+compiling heap_4.c...
+compiling stm32f4xx_hal_tim.c...
+compiling port.c...
+compiling cmsis_os.c...
+compiling system_stm32f4xx.c...
+compiling safe_task.c...
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\safe_task.c(222): warning:  #1-D: last line of file ends without a newline
+  }
+..\Task\Src\safe_task.c: 2 warnings, 0 errors
+compiling Cybergear_Motor.c...
+compiling DJI_Motor.c...
+..\ACE-ECF\Control\Src\DJI_Motor.c(397): warning:  #111-D: statement is unreachable
+          can_std = CAN_Rxmessage->StdId;
+..\ACE-ECF\Control\Src\DJI_Motor.c(463): warning:  #1-D: last line of file ends without a newline
+  }
+..\ACE-ECF\Control\Src\DJI_Motor.c(61): warning:  #177-D: variable "DJI_Motor_Rx_Data"  was declared but never referenced
+  static uint8_t  DJI_Motor_Rx_Data[8];    							//接受数据的数组
+..\ACE-ECF\Control\Src\DJI_Motor.c: 3 warnings, 0 errors
 compiling fire_task.c...
 ../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
   //#define USE_NAVIGATION
@@ -45,6 +104,12 @@ compiling fire_task.c...
 ..\Task\Src\fire_task.c(32): warning:  #177-D: variable "ON_OR_OFF"  was declared but never referenced
   static Fire_State_e ON_OR_OFF = NO_Fire_FORCE;//摩擦轮开关状态
 ..\Task\Src\fire_task.c: 8 warnings, 0 errors
+compiling imu_task.c...
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ACE-ECF\Application\src\imu_task.c(305): warning:  #1-D: last line of file ends without a newline
+  }
+..\ACE-ECF\Application\src\imu_task.c: 2 warnings, 0 errors
 compiling Init_task.c...
 ../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
   //#define USE_NAVIGATION
@@ -57,6 +122,53 @@ compiling Init_task.c...
 ../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\Task\Src\Init_task.c: 5 warnings, 0 errors
+compiling robot_cmd.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ACE-ECF\Control\Src\robot_cmd.c(186): warning:  #177-D: variable "send_time"  was declared but never referenced
+      static uint8_t send_time = 1;
+..\ACE-ECF\Control\Src\robot_cmd.c(544): warning:  #177-D: variable "ALL_motor_current"  was declared but never referenced
+      uint64_t ALL_motor_current;
+..\ACE-ECF\Control\Src\robot_cmd.c(723): warning:  #1-D: last line of file ends without a newline
+  }
+..\ACE-ECF\Control\Src\robot_cmd.c(26): warning:  #550-D: variable "ins"  was set but never used
+  static const INS_t       *ins;
+..\ACE-ECF\Control\Src\robot_cmd.c: 8 warnings, 0 errors
+compiling chassis_task.c...
+../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
+  //#define USE_NAVIGATION
+../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
+  #define PI 3.14159f
+../Task/Inc/Chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
+  #endif
+../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Task\Src\chassis_task.c(214): warning:  #223-D: function "abs" declared implicitly
+              if (abs(Chassis.LF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.LB_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RB_MOTOR->Motor_Information.speed < 10))
+..\Task\Src\chassis_task.c(403): warning:  #177-D: variable "judgDataError_Time"  was declared but never referenced
+  	static int32_t judgDataError_Time = 0;
+..\Task\Src\chassis_task.c(570): warning:  #1-D: last line of file ends without a newline
+  }
+..\Task\Src\chassis_task.c(16): warning:  #177-D: variable "currentTime"  was declared but never referenced
+  static uint32_t currentTime;
+..\Task\Src\chassis_task.c(376): warning:  #177-D: function "Max_Speed_Limit"  was declared but never referenced
+  void Max_Speed_Limit(void)
+..\Task\Src\chassis_task.c(359): warning:  #177-D: function "chassis_prevent_motion_distortion"  was declared but never referenced
+  void chassis_prevent_motion_distortion(void)
+..\Task\Src\chassis_task.c: 11 warnings, 0 errors
+compiling bsp_dr16.c...
+..\ACE-ECF\Bsp\Src\bsp_dr16.c(355): warning:  #177-D: variable "dr16_Recive_flag"  was declared but never referenced
+      uint8_t dr16_Recive_flag = 1;
+..\ACE-ECF\Bsp\Src\bsp_dr16.c: 1 warning, 0 errors
+compiling filter.c...
 compiling referee_task.c...
 ../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
   //#define USE_NAVIGATION
@@ -89,58 +201,64 @@ compiling referee_task.c...
 ..\Task\Src\referee_task.c(606): warning:  #177-D: function "print_fire_encoder"  was declared but never referenced
   void print_fire_encoder(void)
 ..\Task\Src\referee_task.c: 15 warnings, 0 errors
-compiling chassis_task.c...
-../ACE-ECF/robot_define.h(7): warning:  #1-D: last line of file ends without a newline
-  //#define USE_NAVIGATION
-../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h(22): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 361 of "../Drivers/CMSIS/DSP/Include/arm_math.h")
-  #define PI 3.14159f
-../Task/Inc/Chassis_task.h(35): warning:  #1-D: last line of file ends without a newline
-  #endif
-../ACE-ECF/Application/inc/imu_task.h(101): warning:  #1-D: last line of file ends without a newline
-  #endif
-../ACE-ECF/Application/inc/safe_task.h(35): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\Task\Src\chassis_task.c(214): warning:  #223-D: function "abs" declared implicitly
-              if (abs(Chassis.LF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RF_MOTOR->Motor_Information.speed < 10) && abs(Chassis.LB_MOTOR->Motor_Information.speed < 10) && abs(Chassis.RB_MOTOR->Motor_Information.speed < 10))
-..\Task\Src\chassis_task.c(403): warning:  #177-D: variable "judgDataError_Time"  was declared but never referenced
-  	static int32_t judgDataError_Time = 0;
-..\Task\Src\chassis_task.c(570): warning:  #1-D: last line of file ends without a newline
-  }
-..\Task\Src\chassis_task.c(16): warning:  #177-D: variable "currentTime"  was declared but never referenced
-  static uint32_t currentTime;
-..\Task\Src\chassis_task.c(376): warning:  #177-D: function "Max_Speed_Limit"  was declared but never referenced
-  void Max_Speed_Limit(void)
-..\Task\Src\chassis_task.c(359): warning:  #177-D: function "chassis_prevent_motion_distortion"  was declared but never referenced
-  void chassis_prevent_motion_distortion(void)
-..\Task\Src\chassis_task.c: 11 warnings, 0 errors
+compiling maths.c...
+compiling pid.c...
+compiling CRC.c...
+compiling bsp_Motor_Encoder.c...
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(108): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(112): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(116): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(120): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(124): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c(127): warning:  #111-D: statement is unreachable
+              break;
+..\ACE-ECF\Bsp\Src\bsp_Motor_Encoder.c: 6 warnings, 0 errors
+compiling pm01_api.c...
+compiling bsp_can.c...
+compiling bsp_referee.c...
+compiling rm_cilent_ui.c...
+compiling fifo.c...
+compiling kalman_filter.c...
+compiling lqr.c...
+compiling BMI088driver.c...
+compiling bsp_dwt.c...
+compiling BMI088Middleware.c...
+compiling bsp_PWM.c...
+compiling QuaternionEKF.c...
+compiling user_lib.c...
 linking...
 Program Size: Code=46256 RO-data=5100 RW-data=612 ZI-data=44964  
 FromELF: creating hex file...
-"INFANTRY_GIMBAL\INFANTRY_GIMBAL.axf" - 0 Error(s), 39 Warning(s).
+"INFANTRY_GIMBAL\INFANTRY_GIMBAL.axf" - 0 Error(s), 62 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
+                ARM::CMSIS@5.9.0
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.6.0
 
 Package Vendor: Keil
                 https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
-                Keil.STM32F4xx_DFP.2.17.1
+                Keil::STM32F4xx_DFP@2.17.1
                 STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  .\RTE\_INFANTRY_GIMBAL
-  C:\Users\Z\Desktop\ARM\CMSIS\5.9.0\CMSIS\Core\Include
-  C:\Users\Z\Desktop\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  ./RTE/_INFANTRY_GIMBAL
+  C:/Program Files/ARM/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Program Files/ARM/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
-      Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:09
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:03:16
 </pre>
 </body>
 </html>

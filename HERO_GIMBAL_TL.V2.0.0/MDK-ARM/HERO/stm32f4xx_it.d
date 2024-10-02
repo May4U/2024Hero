@@ -7,7 +7,7 @@ hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Include/core_cm4.h
-hero\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\stm32f4xx_it.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Include/cmsis_version.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -15,7 +15,7 @@ hero\stm32f4xx_it.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 hero\stm32f4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-hero\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\stm32f4xx_it.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -39,4 +39,4 @@ hero\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 hero\stm32f4xx_it.o: ../Core/Inc/stm32f4xx_it.h
 hero\stm32f4xx_it.o: ../ACE-ECF/Bsp/Inc/bsp_referee.h
 hero\stm32f4xx_it.o: ../ACE-ECF/Algorithm/inc/CRC.h
-hero\stm32f4xx_it.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+hero\stm32f4xx_it.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

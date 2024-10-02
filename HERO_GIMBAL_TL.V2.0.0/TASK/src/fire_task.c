@@ -41,7 +41,7 @@ void FIRE_TASK(void const *argument)
         right_speed_up = -Fire.right_motor_up->Motor_Information.speed;
 
         Deal_Fire_Set_Rpm();//改变摩擦轮转速
-        Send_Fire_Set_Rpm();//发送底盘摩擦轮设定转速
+        //Send_Fire_Set_Rpm();//发送底盘摩擦轮设定转速
         //Send_Fire_Motor_Speed(left_speed_up, right_speed_up, left_speed, right_speed);//发送底盘摩擦轮实际转速
 
         Gimbal_Fire_State_Set();
@@ -90,6 +90,8 @@ int16_t FIRE_SPEED_16_ = 5800;//5000;//5688;
 
 int16_t speed_left;
 int16_t speed_righ;
+int16_t speed_left_up;
+int16_t speed_righ_up;
 uint8_t speed = 3;
 void fire_behaviour_choose(void)
 {
@@ -108,25 +110,32 @@ void fire_behaviour_choose(void)
 
         return;
     }
+		else
+		{
+			DJIMotor_Set_val(Fire.left_motor, Fire.Gimbal_CMD->Fire_Set_Rpm);
+			DJIMotor_Set_val(Fire.right_motor, Fire.Gimbal_CMD->Fire_Set_Rpm);
+			DJIMotor_Set_val(Fire.left_motor_up, Fire.Gimbal_CMD->Fire_Set_Rpm);
+			DJIMotor_Set_val(Fire.right_motor_up, Fire.Gimbal_CMD->Fire_Set_Rpm);
+		}
    // 裁判系统弹速设置
-	switch (Fire.Gimbal_CMD->shooter_id1_42mm_speed_limit)
-	{
-	case 10:
-        low_speed = FIRE_SPEED_10_;
-		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_10_);
-		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_10_);
-		break;
-	case 16:
-        low_speed = FIRE_SPEED_16_;
-		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_16_);
-		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_16_);
-		break;
-	default:
-        low_speed = FIRE_SPEED_16_;
-		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_10_);
-		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_10_);
-		break;
-	}
+//	switch (Fire.Gimbal_CMD->shooter_id1_42mm_speed_limit)
+//	{
+//	case 10:
+//        low_speed = FIRE_SPEED_10_;
+//		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_10_);
+//		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_10_);
+//		break;
+//	case 16:
+//        low_speed = FIRE_SPEED_16_;
+//		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_16_);
+//		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_16_);
+//		break;
+//	default:
+//        low_speed = FIRE_SPEED_16_;
+//		DJIMotor_Set_val(Fire.left_motor, FIRE_SPEED_10_);
+//		DJIMotor_Set_val(Fire.right_motor, FIRE_SPEED_10_);
+//		break;
+//	}
 
 }
 
@@ -136,9 +145,13 @@ void fire_pid_calculate(void)
     {
         Fire.left_motor->set_speed = 0;
         Fire.right_motor->set_speed = 0;
+			Fire.left_motor_up->set_speed = 0;
+        Fire.right_motor_up->set_speed = 0;
     }
     speed_left = Fire.left_motor->Motor_Information.speed;
     speed_righ = -Fire.right_motor->Motor_Information.speed;
+		speed_left_up = Fire.left_motor->Motor_Information.speed;
+    speed_righ_up = -Fire.right_motor->Motor_Information.speed;
     Fire.left_motor->current_input = motor_speed_control(&Fire.left_motor->Speed_PID,
                                                           Fire.left_motor->set_speed,
                                                           Fire.left_motor->Motor_Information.speed);

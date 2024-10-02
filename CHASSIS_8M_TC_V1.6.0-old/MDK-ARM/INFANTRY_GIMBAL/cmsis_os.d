@@ -1,9 +1,9 @@
 infantry_gimbal\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-infantry_gimbal\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+infantry_gimbal\cmsis_os.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 infantry_gimbal\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 infantry_gimbal\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-infantry_gimbal\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
-infantry_gimbal\cmsis_os.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\cmsis_os.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\cmsis_os.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\cmsis_os.o: ../Core/Inc/FreeRTOSConfig.h
 infantry_gimbal\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 infantry_gimbal\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

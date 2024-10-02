@@ -2,9 +2,9 @@ infantry_gimbal\fire_task.o: ..\Task\Src\fire_task.c
 infantry_gimbal\fire_task.o: ../Task/Inc/fire_task.h
 infantry_gimbal\fire_task.o: ../Task/Inc/Chassis_task.h
 infantry_gimbal\fire_task.o: ../Core/Inc/FreeRTOSConfig.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\fire_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 infantry_gimbal\fire_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 infantry_gimbal\fire_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 infantry_gimbal\fire_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -19,8 +19,8 @@ infantry_gimbal\fire_task.o: ../Drivers/CMSIS/Include/core_cm4.h
 infantry_gimbal\fire_task.o: ../Drivers/CMSIS/Include/cmsis_version.h
 infantry_gimbal\fire_task.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 infantry_gimbal\fire_task.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 infantry_gimbal\fire_task.o: ../FSM/PID_Data.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Control/Inc/robot_cmd.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/robot_define.h
@@ -53,14 +53,14 @@ infantry_gimbal\fire_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_s
 infantry_gimbal\fire_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 infantry_gimbal\fire_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 infantry_gimbal\fire_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 infantry_gimbal\fire_task.o: ../Core/Inc/usart.h
 infantry_gimbal\fire_task.o: ../Core/Inc/main.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/ECF_BspConfig.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Control/Inc/DJI_Motor.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Algorithm/inc/pid.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Bsp/Inc/bsp_Motor_Encoder.h
-infantry_gimbal\fire_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+infantry_gimbal\fire_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Bsp/Inc/bsp_can.h
 infantry_gimbal\fire_task.o: ../Core/Inc/can.h
 infantry_gimbal\fire_task.o: ../ACE-ECF/Bsp/Inc/bsp_referee.h

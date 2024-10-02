@@ -68,7 +68,7 @@
 "infantry_gimbal\kalman_filter.o"
 "infantry_gimbal\quaternionekf.o"
 "infantry_gimbal\user_lib.o"
-"../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4l_math.lib"
+"..\Middlewares\ST\ARM\DSP\Lib\arm_cortexM4l_math.lib"
 --library_type=microlib --strict --scatter "INFANTRY_GIMBAL\INFANTRY_GIMBAL.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

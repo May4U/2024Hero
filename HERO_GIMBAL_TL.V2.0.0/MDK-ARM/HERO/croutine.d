@@ -1,7 +1,7 @@
 hero\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 hero\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\croutine.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\croutine.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\croutine.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\croutine.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\croutine.o: ../Core/Inc/FreeRTOSConfig.h
 hero\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

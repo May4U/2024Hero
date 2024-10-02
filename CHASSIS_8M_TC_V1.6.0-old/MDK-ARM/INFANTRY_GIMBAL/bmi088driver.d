@@ -1,6 +1,6 @@
 infantry_gimbal\bmi088driver.o: ..\ACE-ECF\Application\src\IMU_Driver\BMI088driver.c
 infantry_gimbal\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088driver.h
-infantry_gimbal\bmi088driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\bmi088driver.o: ../Core/Inc/main.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 infantry_gimbal\bmi088driver.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -16,7 +16,7 @@ infantry_gimbal\bmi088driver.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 infantry_gimbal\bmi088driver.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-infantry_gimbal\bmi088driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -37,4 +37,4 @@ infantry_gimbal\bmi088driver.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ha
 infantry_gimbal\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088reg.h
 infantry_gimbal\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/BMI088Middleware.h
 infantry_gimbal\bmi088driver.o: ../ACE-ECF/Application/inc/IMU_Driver/bsp_dwt.h
-infantry_gimbal\bmi088driver.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+infantry_gimbal\bmi088driver.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

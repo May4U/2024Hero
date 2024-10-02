@@ -256,7 +256,7 @@ Chassis.FIRE_MOTOR->current_input = motor_position_speed_control(&Chassis.FIRE_M
     if (Chassis.FIRE_MOTOR->Using_PID == No_Current)
         Chassis.FIRE_MOTOR->current_input = 0;
     if (Chassis.Robot_cmd->Fire_State == On_Empty)  
-        Chassis.FIRE_MOTOR->current_input = 1000;
+        Chassis.FIRE_MOTOR->current_input = -1000;
     
     if (Chassis.RF_MOTOR->Using_PID == SPEED)
     {

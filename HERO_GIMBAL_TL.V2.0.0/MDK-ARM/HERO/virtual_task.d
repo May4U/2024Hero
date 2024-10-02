@@ -10,7 +10,7 @@ hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 hero\virtual_task.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 hero\virtual_task.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 hero\virtual_task.o: ../Drivers/CMSIS/Include/core_cm4.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\virtual_task.o: ../Drivers/CMSIS/Include/cmsis_version.h
 hero\virtual_task.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 hero\virtual_task.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -18,7 +18,7 @@ hero\virtual_task.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 hero\virtual_task.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -40,20 +40,20 @@ hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h
 hero\virtual_task.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h
 hero\virtual_task.o: ../ACE-ECF/Algorithm/inc/struct_typedef.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 hero\virtual_task.o: ../ACE-ECF/Bsp/Inc/bsp_dr16.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 hero\virtual_task.o: ../Core/Inc/usart.h
 hero\virtual_task.o: ../ACE-ECF/Bsp/Inc/ECF_BspConfig.h
 hero\virtual_task.o: ../ACE-ECF/Bsp/Inc/bsp_referee.h
 hero\virtual_task.o: ../ACE-ECF/Algorithm/inc/CRC.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 hero\virtual_task.o: ../ACE-ECF/Algorithm/inc/pid.h
 hero\virtual_task.o: ../ACE-ECF/Algorithm/inc/fifo.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\math.h
-hero\virtual_task.o: D:\Keil5\ARM\ARMCC\Bin\..\include\errno.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+hero\virtual_task.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\errno.h
 hero\virtual_task.o: ../ACE-ECF/Algorithm/inc/linux_list.h
 hero\virtual_task.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 hero\virtual_task.o: ../Core/Inc/FreeRTOSConfig.h

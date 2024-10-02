@@ -1,9 +1,9 @@
 hero\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-hero\queue.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-hero\queue.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+hero\queue.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+hero\queue.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 hero\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-hero\queue.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
-hero\queue.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+hero\queue.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+hero\queue.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 hero\queue.o: ../Core/Inc/FreeRTOSConfig.h
 hero\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 hero\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

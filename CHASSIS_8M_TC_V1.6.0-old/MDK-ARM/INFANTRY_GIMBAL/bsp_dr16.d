@@ -7,7 +7,7 @@ infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_de
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Include/core_cm4.h
-infantry_gimbal\bsp_dr16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+infantry_gimbal\bsp_dr16.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Include/cmsis_version.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -15,7 +15,7 @@ infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-infantry_gimbal\bsp_dr16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+infantry_gimbal\bsp_dr16.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -33,7 +33,7 @@ infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sp
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 infantry_gimbal\bsp_dr16.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-infantry_gimbal\bsp_dr16.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+infantry_gimbal\bsp_dr16.o: C:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 infantry_gimbal\bsp_dr16.o: ../Core/Inc/usart.h
 infantry_gimbal\bsp_dr16.o: ../Core/Inc/main.h
 infantry_gimbal\bsp_dr16.o: ../ACE-ECF/Algorithm/inc/struct_typedef.h
